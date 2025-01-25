@@ -1,9 +1,10 @@
+<!DOCTYPE html>
 <!--  Name: Christian Miller
       Assignment: CS336 Assignment 4
       Created: 1/23/2025
-      Description: Template HTML Page.
+      Description: Registration page with form allowing users to register for
+      workshops.
 -->
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -13,13 +14,149 @@
     <meta name="author" content="Christian Miller">
     <meta name="robots" content="noindex">
     <meta charset="utf-8">
-    <title>Title</title>
+    <title>Register For A Workshop</title>
 </head>
 <body>
 <header>
     <nav></nav>
 </header>
-<main></main>
+<main>
+    <form action="thankyou.html" method="GET">
+        <fieldset>
+            <legend>Registration Form</legend>
+            <label for="title">Title</label>
+            <select name="title" id="title">
+                <option value="">Mr.</option>
+                <option value="">Mrs.</option>
+            </select>
+            <br>
+            <label for="firstName">First Name</label>
+            <input type="text" name="firstName" id="firstName" value="Jane" required
+                   pattern="[a-zA-Z]+" title="Enter your first name">
+            <br>
+            <label for="lastName">Last Name</label>
+            <input type="text" name="lastName" id="lastName" value="Smith" required
+                   pattern="[a-zA-Z\-]+" title="Enter your last name">
+            <br>
+            <label for="address1">Address Line 1</label>
+            <input type="text" name="address1" id="address1" value="123 Main Street" required
+                   pattern="[a-zA-Z0-9\ \#]+" title="Enter line 1 of your address">
+            <br>
+            <label for="address2">Address Line 2</label>
+            <input type="text" name="address2" id="address2" value="Suite 1"
+                   pattern="[a-zA-Z0-9\ \#]+" title="Enter line 2 of your address">
+            <br>
+            <label for="city">City</label>
+            <input type="text" name="city" id="city" value="New York" required
+                   pattern="[a-zA-Z\ ]+" title="Enter your city">
+            <br>
+            <label for="state">State</label>
+            <select name="state" id="state" required title="Enter your state">
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Delaware</option>
+                <option value="DC">District Of Columbia</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+                <option value="HI">Hawaii</option>
+                <option value="ID">Idaho</option>
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+                <option value="IA">Iowa</option>
+                <option value="KS">Kansas</option>
+                <option value="KY">Kentucky</option>
+                <option value="LA">Louisiana</option>
+                <option value="ME">Maine</option>
+                <option value="MD">Maryland</option>
+                <option value="MA">Massachusetts</option>
+                <option value="MI">Michigan</option>
+                <option value="MN">Minnesota</option>
+                <option value="MS">Mississippi</option>
+                <option value="MO">Missouri</option>
+                <option value="MT">Montana</option>
+                <option value="NE">Nebraska</option>
+                <option value="NV">Nevada</option>
+                <option value="NH">New Hampshire</option>
+                <option value="NJ">New Jersey</option>
+                <option value="NM">New Mexico</option>
+                <option value="NY">New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="ND">North Dakota</option>
+                <option value="OH">Ohio</option>
+                <option value="OK">Oklahoma</option>
+                <option value="OR">Oregon</option>
+                <option value="PA">Pennsylvania</option>
+                <option value="RI">Rhode Island</option>
+                <option value="SC">South Carolina</option>
+                <option value="SD">South Dakota</option>
+                <option value="TN">Tennessee</option>
+                <option value="TX">Texas</option>
+                <option value="UT">Utah</option>
+                <option value="VT">Vermont</option>
+                <option value="VA">Virginia</option>
+                <option value="WA">Washington</option>
+                <option value="WV">West Virginia</option>
+                <option value="WI">Wisconsin</option>
+                <option value="WY">Wyoming</option>
+            </select>
+            <br>
+            <label for="zip">Zip</label>
+            <input type="text" name="zip" id="zip" value="12345" required pattern="[0-9]{5}" title="Enter your zip code">
+            <br>
+            <label for="telephone">Telephone</label>
+            <input type="text" name="telephone" id="telephone" value="123-456-7890" required
+                   pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Enter your telephone number">
+            <br>
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email" value="jane@example.com" required title="Enter your email address">
+            <br>
+            <label for="companyPosition">Company Position</label>
+            <input type="text" name="companyPosition" id="companyPosition"
+                   value="Chief Executive Officer" required pattern="[a-zA-Z0-9\s]+" title="Enter your company position">
+            <br>
+            <label for="companyName">Company Name</label>
+            <input type="text" name="companyName" id="companyName" value="SecurityWorks" required
+                   pattern="[a-zA-Z0-9\s]+" title="Enter your company name">
+            <br>
+            <!-- Session 1 -->
+            <label for="s1option1">Cybersecurity Foundations</label>
+            <input type="radio" name="session1" id="s1option1" title="Cybersecurity Foundations">
+
+            <label for="s1option2">Understanding Cyber Threats</label>
+            <input type="radio" name="session1" id="s1option2" title="Understanding Cyber Threats">
+
+            <label for="s1option3">The Role of Cryptography in Cybersecurity </label>
+            <input type="radio" name="session1" id="s1option3" title="The Role of Cryptography in Cybersecurity">
+            <br>
+            <!-- Session 2 -->
+            <label for="s2option1">Defending Against Cyberattacks</label>
+            <input type="radio" name="session2" id="s2option1" title="Defending Against Cyberattacks">
+
+            <label for="s2option2">Ethical Hacking and Penetration Testing</label>
+            <input type="radio" name="session2" id="s2option2" title="Ethical Hacking and Penetration Testing">
+
+            <label for="s2option3">Artificial Intelligence in Cybersecurity Defense</label>
+            <input type="radio" name="session2" id="s2option3" title="Artificial Intelligence in Cybersecurity Defense">
+            <br>
+            <!-- Session 3 -->
+            <label for="s3option1">Cybersecurity for Small Businesses</label>
+            <input type="radio" name="session3" id="s3option1" title="Cybersecurity for Small Businesses">
+
+            <label for="s3option2">Securing the Internet of Things</label>
+            <input type="radio" name="session3" id="s3option2" title="Securing the Internet of Things">
+
+            <label for="s3option3">Quantum Computing in Cybersecurity</label>
+            <input type="radio" name="session3" id="s3option3" title="Quantum Computing in Cybersecurity">
+            <br>
+            <input type="submit" value="Submit" title="Submit your registration">
+        </fieldset>
+    </form>
+</main>
 <footer>
     <address>
         <small>123 Cyber Way, 80010, Denver, CO</small>
